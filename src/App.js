@@ -21,7 +21,9 @@ export default class App extends Component{
         text : ev.target.value,
         key: Date.now()
       }
+      
     })
+    ev.target.value = ''
     this.saveStateToLocalStorage()
   }
   //add
