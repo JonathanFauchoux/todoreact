@@ -1,32 +1,109 @@
+  /* color: #61dafb; */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+display: flex;
+justify-content: center;
+
+  background-color: #282c34;
+  
+}
 .App {
-  text-align: center;
+  padding: 1.5rem;
+  display: flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 90vw;
+  
+ 
+  max-width: 600px;
+ 
+
+ 
+
 }
 
 .App-logo {
   height: 40vmin;
+  width: 40px;
   pointer-events: none;
+  cursor: pointer;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
-
+/*TODOBOARD*/
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  padding:1rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  font-size: 1rem;
   color: white;
+  border: 1px solid #61dafb;
+  border-radius:10px;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.todoBoard{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 100%;
+}
+.todoBoard input{
+  height: 1.5rem;
+  width: 60%;
+  background-color: white;
+  box-shadow: none;
+  color: #282c34;
+  padding-left: 7px;
+  /* border-radius: 5px; */
+  border: none;
+  transition: all .5s;
+  
+}
+.todoBoard input:focus{
+  height: 1.5rem;
+  width: 75%;
+  border: transparent;
+  padding-left: 7px;
+  box-shadow: 0px 0px 18px rgba(255,255,255, 0.8);
+  outline: none;
+  
+}
+.todoBoard input:focus::placeholder{
+  color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.addBtn{
+  border: none;
+  padding: .2rem 1rem;
+  background-color: #282c34;
+  border: 1px solid #61dafb;
+  border-radius:5px;
+  color:#61dafb;
+  
+  
 }
+.addBtn:hover{
+
+  background-color: #61dafb;
+  
+  color: white;
+}
+/*animation*/
 
 @keyframes App-logo-spin {
   from {
