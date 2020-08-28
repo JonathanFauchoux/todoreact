@@ -1,6 +1,6 @@
 ## Exercice Todo ReactJs
 
-add todo / delete todo / edit todo / ++
+add todo / delete todo / edit todo / LocalStorage / ++
 
 https://todoreact-rho.vercel.app/
 
